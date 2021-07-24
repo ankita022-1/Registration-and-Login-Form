@@ -1,1 +1,2 @@
 node_modules
+MONGODB_URL=mongodb+srv://ankita:nitachandra123@cluster0.jnusx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority

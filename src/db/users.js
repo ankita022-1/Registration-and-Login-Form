@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 const validator=require("validator");
 // connecting to database 
-mongoose.connect("mongodb://localhost:27017/usersData",{ useUnifiedTopology: true ,useNewUrlParser: true,useCreateIndex:true,useFindAndModify:true }).then(()=>{
+mongoose.connect("mongodb+srv://ankita:nitachandra123@cluster0.jnusx.mongodb.net/usersData?retryWrites=true&w=majority",{ useUnifiedTopology: true ,useNewUrlParser: true,useCreateIndex:true,useFindAndModify:true }).then(()=>{
     console.log("connected successfully...");
 }).catch((err)=>{
     console.log(err);
