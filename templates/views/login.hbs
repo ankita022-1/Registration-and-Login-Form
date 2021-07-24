@@ -1,0 +1,27 @@
+{{>headerLinks}}
+
+<body>
+    <div id="mainDiv">
+        <div id="container_primary">
+            <h2>Login To Your Account</h2>
+            <br/>
+            <h3 style="color: red;">{{errMsg}}</h3>
+            <h3 style="color: green;">{{msg}}</h3>
+            <form id="login" action="/" method="POST" >
+                <label for="email" class="box">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required value={{val}}>
+                <label for="password" class="box">Password</label>
+                <input type="text" name="password" id="password" placeholder="Enter your Password" required >
+
+                <button type="submit" class="btn" id="submit">Login</button>
+            </form>
+        </div>
+        {{!-- signup link --}}
+        <div id="container_secondary">
+            <h4 id="para">Need an account? <a href="./registration" style="color: darkred;">Signup</a></h4>
+        </div>
+    </div>
+
+</body>
+
+</html>

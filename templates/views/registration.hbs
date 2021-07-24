@@ -1,0 +1,30 @@
+{{>headerLinks}}
+
+<body>
+    <div id="mainDiv">
+        <div id="container_primary">
+            <h2>Registration</h2>
+            <form  action="/registration" method="POST" id="registration">
+                <label for="username" class="box">Name<spam style="color: red;">*</spam></label>
+                <input type="text" name="username" id="username" placeholder="Enter Your Name" required value={{val}}>
+                <label for="email" class="box">Email<spam style="color: red;">*</spam></label>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email" required  value={{val2}}>
+
+                <label for="password" class="box">Password(5 or more characters)<spam style="color: red;">*</spam></label>
+                <input type="password" name="password" id="password" placeholder="Password" required  value={{val3}}>
+                <label for="cpassword" class="box">Confirm Password<spam style="color: red;">*</spam></label>
+                <input type="password" name="cPassword" id="cpassword" placeholder="Password" required>
+                <h4 style="color:red;">{{err}}</h4><br/>
+                <button type="submit" class="btn" id="submit">Register</button>
+
+            </form>
+        </div>
+        {{!--  login link--}}
+        <div id="container_secondary">
+            <h4 id="para">Have an account? <a href="/" style="color: darkred;">Login</a></h4>
+        </div>
+    </div>
+
+</body>
+
+</html>
